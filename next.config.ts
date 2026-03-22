@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: 'standalone',
   // Otimiza imports de bibliotecas com barrel files (index.js que re-exporta tudo)
   // Isso evita carregar módulos não utilizados, reduzindo o bundle em 15-25KB
   // Ref: https://vercel.com/blog/how-we-optimized-package-imports-in-next-js
