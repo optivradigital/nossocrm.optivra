@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   nossocrm:
-    build: .
+    image: ghcr.io/optivradigital/nossocrm:latest
     container_name: nossocrm
     restart: unless-stopped
     ports:
